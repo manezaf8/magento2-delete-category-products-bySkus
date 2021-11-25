@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+/**
+ * @package   F8_Catelog
+ * @author    Ntabethemba Mabetshe 
+ * @copyright Copyright (c) 2021 F8 Group IT
+ */
+-->
+<form xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Ui:etc/ui_configuration.xsd">
+   <fieldset name="assign_products">
+        <container name="assign_products_container">
+            <htmlContent name="html_content">
+                <block name="assignProducts" class="Magento\VisualMerchandiser\Block\Adminhtml\Category\AssignProducts"/>
+            </htmlContent>
+            <field name="bulk_unlink" sortOrder="155" >
+            <argument name="data" xsi:type="array">
+                <item name="config" xsi:type="array">
+                    <item name="formElement" xsi:type="string">textarea</item>
+                    <item name="cols" xsi:type="number">15</item>
+                    <item name="rows" xsi:type="number">5</item>
+                    <item name="label" translate="true" xsi:type="string">Remove Products In Bulk</item>
+                    <item name="dataType" translate="true" xsi:type="string">text</item>
+                </item>
+            </argument>
+            <settings>
+                <label translate="true">Remove Products In Bulk</label>
+                <notice>A comma separated list of product SKUs to be removed from this category.</notice>
+            </settings>
+        </field>
+        </container>
+    </fieldset>
+</form>

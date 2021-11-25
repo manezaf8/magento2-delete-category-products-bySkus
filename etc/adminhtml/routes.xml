@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   F8_Catalog
+ * @author    Ntabethemba Mabetshe
+ * @copyright Copyright (c) 2021  Group IT
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:App/etc/routes.xsd">
+    <router id="admin">
+        <route id="f8catalog" frontName="f8catalog">
+            <module name="F8_Catalog" before="Magento_Backend" />
+        </route>
+    </router>
+</config>

@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * @package   F8_Catalog
+ * @author    Ntabethemba Mabetshe 
+ * @copyright Copyright (c) 2021 F8_IT
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+    <module name="F8_Catalog" setup_version="1.2.4">
+        <sequence>
+            <module name="Magento_Catalog"/>
+            <module name="Magento_Backend"/>
+        </sequence>
+    </module>
+</config>
